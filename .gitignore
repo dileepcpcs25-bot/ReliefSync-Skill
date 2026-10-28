@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local databases (may contain real operational data)
+backend/data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+*.bak
+
+# Node / build
+node_modules/
+frontend/dist/
+
+# Secrets & local config
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+backend/.pytest-temp/

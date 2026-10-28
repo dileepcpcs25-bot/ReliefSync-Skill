@@ -1,0 +1,11 @@
+services:
+  mongodb:
+    image: mongo:7
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - reliefsync_mongodb_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  reliefsync_mongodb_data:
